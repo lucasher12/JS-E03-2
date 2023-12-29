@@ -7,9 +7,11 @@
     <title>INICIO | ABSURDA</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Poppins:wght@500&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
 </head>
 
 <body>
@@ -31,27 +33,45 @@
                         <li class="nav-item">
                             <a class="nav-link fs-5 fw-semibold" href="./pages/products.html">products</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link fs-5 fw-semibold" href="./pages/cart.html">cart</a>
-                        </li>
                     </ul>
+                    <i class='bx bx-cart mt-2' id="cartIcon"></i>                
                 </div>
             </div>
         </nav>
     </header>
     <main>
         <div class="background-image">
-            <img src="./assets/img/clothing.jpg" class="img-fluid mb-10" alt="">
+            <img src="./assets/img/portraitTres.jpg" class="img-fluid mb-10" alt="">
         </div>
         <section class="container-fluid h1-edit">
             <h1 class="fs-2 fw-bold">SUMMER SALE - 20%OFF ONCE ADDED TO THE CART</h1>
         </section>
         <section id="containerProd"></section>
-
+        <section id="containerCart">
+            <div class="cart">
+                <h2 class="cartTitle">MY CART</h2>
+                <div class="cartContent">
+                    <div class="cartBox">
+                        <div class="detail">
+                            <div class="cartProductTitle"></div>
+                            <div class="cartPrice"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="total">
+                    <div class="totalTitle">Total</div>
+                    <div class="totalPrice">$0</div>
+                </div>
+                <button type="button" class="btnBuy" id="checkout">Proceed to checkout</button>
+                <i class='bx bx-x' id="closeCart"></i>
+            </div>
+        </section>
     </main>
 
-    <script src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
+
